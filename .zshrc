@@ -117,4 +117,10 @@ HISTORY_IGNORE="*rm*"
 
 # Created by `pipx` on 2023-10-14 17:33:09
 export PATH="$PATH:/home/mimovnik/.local/bin"
+
+autoload -Uz compinit
+zstyle ':completion:*' menu select
+fpath+=~/.zfunc
+
+# Init zoxide
 eval "$(zoxide init --cmd cd zsh)"

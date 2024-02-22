@@ -1,8 +1,8 @@
-!#/bin/bash
+#!/bin/bash
 
 # Install nala, zsh, curl and fuzzy-finder
 
-sudo apt install nala zsh curl fzf
+sudo apt install nala zsh stow curl fzf
 
 # Install zoxide
 
@@ -29,3 +29,9 @@ if ! [ -d $P10K_PATH ]; then
 	echo "Installing powerlevel10k."
 	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $P10K_PATH
 fi
+
+# Install nvim
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+sudo rm -rf /opt/nvim
+sudo tar -C /opt -xzf nvim-linux64.tar.gz
+rm nvim-linux64.tar.gz
