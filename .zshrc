@@ -124,3 +124,5 @@ fpath+=~/.zfunc
 
 # Init zoxide
 eval "$(zoxide init --cmd cd zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -48,6 +48,7 @@ rm nvim-linux64.tar.gz
 
 - zsh
 - curl
+- stow (gnu stow)
 
 #### Other via script
 
@@ -60,15 +61,7 @@ cd ~
 
 #### Other manually
 
-#### stow, fzf
-
 ```
-# stow
-git clone https://git.savannah.gnu.org/git/stow.git ~/stow
-cd ~/stow
-./configure && make install
-cd ~
-
 # fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
