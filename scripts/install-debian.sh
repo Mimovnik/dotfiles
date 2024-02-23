@@ -1,18 +1,10 @@
 #!/bin/bash
 
-# dotfiles install script
+# dotfiles install script for debian
 
-# Install stow
+# Install nala, zsh, curl and fuzzy-finder
 
-git clone https://git.savannah.gnu.org/git/stow.git ~/stow
-cd ~/stow
-./configure && make install
-cd ~
-
-# Install fuzzy finder
-
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
+sudo apt install nala zsh stow curl fzf
 
 # Install zoxide
 
