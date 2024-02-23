@@ -29,6 +29,15 @@ git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_AUTOSUGGESTIONS_
 P10K_PATH="$HOME/.oh-my-zsh/custom/themes/powerlevel10k"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $P10K_PATH
 
+# Install auto-suggestions
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+
+# Install powerlevel10k theme
+
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
+
+
 # Install nvim
 
 if [ ! -d "/opt/nvim-linux64" ]; then
