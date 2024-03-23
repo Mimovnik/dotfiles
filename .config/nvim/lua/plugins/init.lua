@@ -23,6 +23,8 @@ local plugins = {
       ensure_installed = {
         "lua-language-server",
         "clangd",
+        "python-lsp-server",
+        "black",
       },
     },
   },
