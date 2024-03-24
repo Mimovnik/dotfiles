@@ -1,11 +1,11 @@
 local plugins = {
-  {
-    "github/copilot.vim",
-    lazy = false,
-  },
+  -- {
+  --   "github/copilot.vim",
+  --   lazy = false,
+  -- },
   {
     "stevearc/conform.nvim",
-    -- event = 'BufWritePre' -- uncomment for format on save
+    -- event = 'BufWritePre', -- uncomment for format on save
     config = function()
       require "configs.conform"
     end,
@@ -24,7 +24,6 @@ local plugins = {
         "lua-language-server",
         "clangd",
         "python-lsp-server",
-        "black",
       },
     },
   },
