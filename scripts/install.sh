@@ -31,4 +31,6 @@ sudo tar -C /opt -xzf nvim-linux64.tar.gz
 rm nvim-linux64.tar.gz
 
 # Install nvChad
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+mv ~/.config/nvim ~/.config/nvim.bak.d
+rm -rf ~/.local/share/nvim
+nvim
