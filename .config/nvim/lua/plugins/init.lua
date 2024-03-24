@@ -1,8 +1,4 @@
 local plugins = {
-  -- {
-  --   "github/copilot.vim",
-  --   lazy = false,
-  -- },
   {
     "stevearc/conform.nvim",
     -- event = 'BufWritePre', -- uncomment for format on save
@@ -26,6 +22,10 @@ local plugins = {
         "python-lsp-server",
       },
     },
+  },
+  {
+    "github/copilot.vim",
+    lazy = false,
   },
   {
     "nvim-treesitter/nvim-treesitter",
