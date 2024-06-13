@@ -1,0 +1,9 @@
+[user]
+	name = mimovnik
+	email = mimovnik@protonmail.com
+[core]
+	editor = nvim
+[push]
+	autoSetupRemote = true
+[init]
+	defaultBranch = main
