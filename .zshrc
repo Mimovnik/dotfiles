@@ -7,9 +7,11 @@ bindkey -e
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/mimo/.zshrc'
 
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
+# zsh-autocomplete
+source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
+# zsh-autosuggestions
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # oh-my-posh
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/mimo.toml)"
