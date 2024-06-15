@@ -12,7 +12,7 @@ compinit
 # End of lines added by compinstall
 
 # oh-my-posh
-eval "$(oh-my-posh init zsh)"
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/mimo.toml)"
 
 # zoxide
 eval "$(zoxide init --cmd cd zsh)"
