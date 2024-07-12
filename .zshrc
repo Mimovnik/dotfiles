@@ -32,3 +32,7 @@ eval $(keychain --eval --quiet --agents ssh)
 
 # nvim
 alias vim=nvim
+
+# xclip copy
+alias xcopy='xclip -selection clipboard'
+
