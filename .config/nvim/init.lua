@@ -770,12 +770,13 @@ require("lazy").setup({
 	--  Uncomment any of the lines below to enable them (you will need to restart nvim).
 
 	require("plugins.debug"),
-	-- require("plugins.indent_line"),
-	-- require("plugins.lint"),
-	-- require("plugins.autopairs"),
+	require("plugins.indent_line"),
+	require("plugins.lint"),
+	require("plugins.autopairs"),
 	require("plugins.neo-tree"),
 	require("plugins.gitsigns"), -- adds gitsigns recommend keymaps
-
+	--
+	--
 	-- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
 	--    This is the easiest way to modularize your config.
 	--
@@ -806,3 +807,9 @@ require("lazy").setup({
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+require("lspconfig").gdscript.setup({})
+
+local pipepath = vim.fn.stdpath("cache") .. "/server.pipe"
+if not vim.loop.fs_stat(pipepath) then
+	vim.fn.serverstart(pipepath)
+end
