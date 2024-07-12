@@ -29,3 +29,6 @@ alias lta='eza --tree -a --git-ignore $eza_params'
 
 # keychain (ssh-agent)
 eval $(keychain --eval --quiet --agents ssh)
+
+# nvim
+alias vim=nvim

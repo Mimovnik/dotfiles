@@ -2,7 +2,6 @@
 
 ## Prerequisites:
 - [stow](https://www.gnu.org/software/stow) (symlink farm manager)
-- [kitty](https://github.com/kovidgoyal/kitty) (terminal)
 - [zsh](https://zsh.sourceforge.io) (shell)
 - [oh-my-posh](https://github.com/jandedobbeleer/oh-my-posh) (prompt style)
 - [zoxide](https://github.com/ajeetdsouza/zoxide) (cd replacement)
