@@ -809,6 +809,13 @@ require("lazy").setup({
 -- vim: ts=2 sts=2 sw=2 et
 require("lspconfig").gdscript.setup({})
 
+-- You need to configure Godot to use neovim as an external editor.
+-- Click the Editor -> Editor Settings... menu.
+-- In the "Editor Settings" window, use the left tree to navigate to Text Editor -> External.
+-- In the right panel check the box for "Use External Editor".
+-- Set "Exec Path" to the path for nvim, which was /usr/bin/nvim on my system.
+-- Set the "Exec Flags" to: --server /home/<username>/.cache/nvim/server.pipe --remote-send "<C-\><C-N>:n {file}<CR>:call cursor({line},{col})<CR>" where <username> is your username.
+-- Close the "Editor Settings" window.
 local pipepath = vim.fn.stdpath("cache") .. "/server.pipe"
 if not vim.loop.fs_stat(pipepath) then
 	vim.fn.serverstart(pipepath)
