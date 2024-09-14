@@ -36,3 +36,5 @@ alias vim=nvim
 # xclip copy
 alias xcopy='xclip -selection clipboard'
 
+# thefuck
+eval $(thefuck --alias)
