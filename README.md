@@ -3,6 +3,8 @@
 ## Prerequisites:
 - [stow](https://www.gnu.org/software/stow) (symlink farm manager)
 - [zsh](https://zsh.sourceforge.io) (shell)
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) (command, flag and file suggestions)
+- [zsh-autocomplete](https://github.com/marlonrichert/zsh-autocomplete) (real-time type-ahead autocompletion)
 - [oh-my-posh](https://github.com/jandedobbeleer/oh-my-posh) (prompt style)
 - [zoxide](https://github.com/ajeetdsouza/zoxide) (cd replacement)
 - [eza](https://github.com/eza-community/eza) (ls replacement)
